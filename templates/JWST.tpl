@@ -1,6 +1,7 @@
 # Region file format: DS9 version 4.1
 # Made by Mingyu Li [lmytime@hotmail.com] @2023/10/14
-# This version is approximate and one can not guarantee accuracy
+# This version is approximate and one can not guarantee accuracy.
+# Thanks for the contribution from https://gitlab.com/parrabalh/jwst_fov_plots
 global color=green dashlist=8 3 width=2 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
 wcs0;fk5
 # composite(0 0,0.0) || composite=0 width=2
