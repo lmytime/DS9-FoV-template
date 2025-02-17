@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xmlns="http://www.ivoa.net/xml/VOTable/v1.1" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.1 http://www.ivoa.net/xml/VOTable/v1.1">
+<RESOURCE ID="MOIRCS" utype="dal:footprint.geom">
+    <PARAM datatype="char" arraysize="*" name="TelescopeName" ID="TelescopeName" value="Subaru" />
+    <PARAM datatype="char" arraysize="*" name="InstrumentName" ID="InstrumentName" value="MOIRCS" />
+    <PARAM datatype="char" arraysize="*" name="InstrumentDescription" ID="InstrumentDescription" value="Subaru/MOIRCS Imaging" />
+    <PARAM datatype="char" arraysize="*" name="Origin" ID="Origin" value="Mingyu Li" />
+    <PARAM datatype="char" arraysize="*" utype="stc:AstroCoordSystem.CoordFrame.CARTESIAN" name="reference-frame" value="*"/>
+    <PARAM name="projection" utype="stc:AstroCoordSystem.CoordFrame.Cart2DRefFrame.projection" datatype="char" arraysize="*" value="TAN"/>
+    <PARAM name="PA" ucd="pos.posAng" datatype="float" unit="deg" utype="stc:AstroCoordSys/SpaceFrame/PositionAngle" value="0.0" />
+    <PARAM name="Rollable" value="true" />
+    <PARAM name="Movable" value="true" />
+    <PARAM name="Rotatable" value="true" />
+
+    <RESOURCE ID="dector1" name="dector1">
+    <TABLE utype="dal:footprint.geom.segment">
+    <PARAM datatype="char" name="Shape" arraysize="*" value="Polygon" utype="dal:footprint.geom.segment.shape" />
+    <FIELD unit="arcsec" datatype="double" name="xPtPosition" utype="stc:AstroCoordArea.Polygon.Vertex.Position.C1" />
+    <FIELD unit="arcsec" datatype="double" name="yPtPosition" utype="stc:AstroCoordArea.Polygon.Vertex.Position.C2" />
+    <DATA>
+    <TABLEDATA>
+        <TR><TD>-120.0</TD><TD>-3.0</TD></TR>
+        <TR><TD>120.0</TD><TD>-3.0</TD></TR>
+        <TR><TD>120.0</TD><TD>-213.0</TD></TR>
+        <TR><TD>-120.0</TD><TD>-213.0</TD></TR>
+    </TABLEDATA>
+    </DATA>
+    </TABLE>
+    </RESOURCE>
+
+    <RESOURCE ID="dector2" name="dector2">
+    <TABLE utype="dal:footprint.geom.segment">
+    <PARAM datatype="char" name="Shape" arraysize="*" value="Polygon" utype="dal:footprint.geom.segment.shape" />
+    <FIELD unit="arcsec" datatype="double" name="xPtPosition" utype="stc:AstroCoordArea.Polygon.Vertex.Position.C1" />
+    <FIELD unit="arcsec" datatype="double" name="yPtPosition" utype="stc:AstroCoordArea.Polygon.Vertex.Position.C2" />
+    <DATA>
+    <TABLEDATA>
+        <TR><TD>-120.0</TD><TD>213.0</TD></TR>
+        <TR><TD>120.0</TD><TD>213.0</TD></TR>
+        <TR><TD>120.0</TD><TD>3.0</TD></TR>
+        <TR><TD>-120.0</TD><TD>3.0</TD></TR>
+    </TABLEDATA>
+    </DATA>
+    </TABLE>
+    </RESOURCE>
+
+</RESOURCE>
+</VOTABLE>
